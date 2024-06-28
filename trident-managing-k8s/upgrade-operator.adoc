@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: trident-managing-k8s/upgrade-operator.html 
+keywords: upgrade, trident, methods, operator, tridentctl, helm 
+summary: 운영자를 사용하여 기존 Astra Trident 설치를 쉽게 업그레이드할 수 있습니다. 
+---
+= Trident 운영자 또는 Helm을 사용하여 Astra Trident 설치를 업그레이드합니다
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+수동으로 또는 Helm을 사용하여 Trident 연산자를 사용하여 Astra Trident를 업그레이드할 수 있습니다. Trident 운영자 설치에서 다른 Trident 운영자 설치로 업그레이드하거나, 에서 업그레이드할 수 있습니다 `tridentctl` Trident 운영자 버전에 설치. 검토 link:upgrade-trident.html#select-an-upgrade-method["업그레이드 방법을 선택합니다"] Trident 운영자 설치를 업그레이드하기 전에.
+
+
+
+== 수동 설치를 업그레이드합니다
+
+클러스터 범위 Trident 운영자 설치에서 다른 클러스터 범위 Trident 운영자 설치로 업그레이드할 수 있습니다. Astra Trident 버전 21.01 이상에서는 클러스터 범위 연산자를 사용합니다.
+
+
+NOTE: 네임스페이스 범위 운영자(버전 20.07~20.10)를 사용하여 설치된 Astra Trident에서 업그레이드하려면 의 업그레이드 지침을 사용하십시오 link:../earlier-versions.html["설치된 버전"] 기술입니다.
+
+.이 작업에 대해
+Trident는 운영자를 설치하고 Kubernetes 버전에 대한 관련 오브젝트를 생성하는 데 사용할 수 있는 번들 파일을 제공합니다.
+
+* Kubernetes 1.24 이하 버전을 실행하는 클러스터의 경우, 를 사용합니다 link:https://github.com/NetApp/trident/tree/stable/v24.02/deploy/bundle_pre_1_25.yaml["Bundle_PRE_1_25.YAML"^].
+* Kubernetes 1.25 이상을 실행하는 클러스터의 경우 를 사용합니다 link:https://github.com/NetApp/trident/tree/stable/v24.02/deploy/bundle_post_1_25.yaml["Bundle_post_1_25.YAML"^].
+
+
+.시작하기 전에
+실행 중인 Kubernetes 클러스터를 사용하고 있는지 확인합니다 link:../trident-get-started/requirements.html["지원되는 Kubernetes 버전"].
+
+.단계
+. Astra Trident 버전 확인:
++
+[listing]
+----
+./tridentctl -n trident version
+----
+. 현재 Astra Trident 인스턴스를 설치하는 데 사용된 Trident 연산자를 삭제합니다. 예를 들어, 23.07에서 업그레이드하는 경우 다음 명령을 실행합니다.
++
+[listing]
+----
+kubectl delete -f 23.07.0/trident-installer/deploy/<bundle.yaml> -n trident
+----
+. 를 사용하여 초기 설치를 사용자 지정한 경우 `TridentOrchestrator` 속성을 편집할 수 있습니다 `TridentOrchestrator` 설치 매개 변수를 수정하는 개체입니다. 여기에는 오프라인 모드에 대해 미러링된 Trident 및 CSI 이미지 레지스트리를 지정하는 변경 사항, 디버그 로그 활성화 또는 이미지 풀 비밀을 지정하는 변경 사항이 포함될 수 있습니다.
+. 사용자 환경에 적합한 번들 YAML 파일을 사용하여 Astra Trident를 설치합니다. 여기서 _<bundle.yaml>_is는
+`bundle_pre_1_25.yaml` 또는 `bundle_post_1_25.yaml` Kubernetes 버전을 기반으로 합니다. 예를 들어, Astra Trident 24.02를 설치하는 경우 다음 명령을 실행합니다.
++
+[listing]
+----
+kubectl create -f 24.02.0/trident-installer/deploy/<bundle.yaml> -n trident
+----
+
+
+
+
+== Helm 설치를 업그레이드합니다
+
+Astra Trident Helm 설치를 업그레이드할 수 있습니다.
+
+
+WARNING: Astra Trident가 설치된 Kubernetes 클러스터를 1.24에서 1.25 이상으로 업그레이드할 경우 Values.YAML을 업데이트해야 합니다 `excludePodSecurityPolicy` 를 선택합니다 `true` 또는 을 추가합니다 `--set excludePodSecurityPolicy=true` 를 누릅니다 `helm upgrade` 명령을 먼저 실행한 후 클러스터를 업그레이드하십시오.
+
+.단계
+. 있다면 link:../trident-get-started/kubernetes-deploy-helm.html#deploy-the-trident-operator-and-install-astra-trident-using-helm["Helm을 사용하여 Astra Trident를 설치했습니다"]을 사용할 수 있습니다 `helm upgrade trident netapp-trident/trident-operator --version 100.2402.0` 한 단계로 업그레이드합니다. Helm repo를 추가하지 않았거나 업그레이드에 사용할 수 없는 경우:
++
+.. 에서 최신 Astra Trident 릴리즈를 다운로드하십시오 link:https://github.com/NetApp/trident/releases/latest["GitHub의 _Assets_섹션"^].
+.. 를 사용합니다 `helm upgrade` 명령 위치 `trident-operator-24.02.0.tgz` 업그레이드하려는 버전을 반영합니다.
++
+[listing]
+----
+helm upgrade <name> trident-operator-24.02.0.tgz
+----
++
+
+NOTE: 초기 설치 중에 사용자 정의 옵션을 설정하는 경우(예: Trident 및 CSI 이미지에 대한 전용 미러링된 레지스트리 지정) 를 추가합니다 `helm upgrade` 명령을 사용합니다 `--set` 이러한 옵션이 업그레이드 명령에 포함되도록 하려면 값이 기본값으로 재설정됩니다.
+
+
+
+. 실행 `helm list` 차트와 앱 버전이 모두 업그레이드되었는지 확인합니다. 실행 `tridentctl logs` 디버그 메시지를 검토합니다.
+
+
+
+
+== 에서 업그레이드 `tridentctl` Trident 운영자에 설치
+
+에서 Trident 운영자의 최신 릴리즈로 업그레이드할 수 있습니다 `tridentctl` 설치: 기존 백엔드 및 PVC를 자동으로 사용할 수 있습니다.
+
+
+NOTE: 설치 방법 간에 전환하기 전에 를 참조하십시오 link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["설치 방법 간 이동"].
+
+.단계
+. 최신 Astra Trident 릴리스를 다운로드하십시오.
++
+[listing]
+----
+# Download the release required [24.020.0]
+mkdir 24.02.0
+cd 24.02.0
+wget https://github.com/NetApp/trident/releases/download/v24.02.0/trident-installer-24.02.0.tar.gz
+tar -xf trident-installer-24.02.0.tar.gz
+cd trident-installer
+----
+. 를 생성합니다 `tridentorchestrator` 매니페스트에서 CRD를 선택합니다.
++
+[listing]
+----
+kubectl create -f deploy/crds/trident.netapp.io_tridentorchestrators_crd_post1.16.yaml
+----
+. 클러스터 범위 연산자를 같은 네임스페이스에 구현합니다.
++
+[listing]
+----
+kubectl create -f deploy/<bundle-name.yaml>
+
+serviceaccount/trident-operator created
+clusterrole.rbac.authorization.k8s.io/trident-operator created
+clusterrolebinding.rbac.authorization.k8s.io/trident-operator created
+deployment.apps/trident-operator created
+podsecuritypolicy.policy/tridentoperatorpods created
+
+#Examine the pods in the Trident namespace
+NAME                                  READY   STATUS    RESTARTS   AGE
+trident-controller-79df798bdc-m79dc   6/6     Running   0          150d
+trident-node-linux-xrst8              2/2     Running   0          150d
+trident-operator-5574dbbc68-nthjv     1/1     Running   0          1m30s
+----
+. 을 생성합니다 `TridentOrchestrator` Astra Trident 설치용 CR.
++
+[listing]
+----
+cat deploy/crds/tridentorchestrator_cr.yaml
+apiVersion: trident.netapp.io/v1
+kind: TridentOrchestrator
+metadata:
+  name: trident
+spec:
+  debug: true
+  namespace: trident
+
+kubectl create -f deploy/crds/tridentorchestrator_cr.yaml
+
+#Examine the pods in the Trident namespace
+NAME                                READY   STATUS    RESTARTS   AGE
+trident-csi-79df798bdc-m79dc        6/6     Running   0          1m
+trident-csi-xrst8                   2/2     Running   0          1m
+trident-operator-5574dbbc68-nthjv   1/1     Running   0          5m41s
+----
+. Trident가 의도한 버전으로 업그레이드되었는지 확인합니다.
++
+[listing]
+----
+kubectl describe torc trident | grep Message -A 3
+
+Message:                Trident installed
+Namespace:              trident
+Status:                 Installed
+Version:                v24.02.0
+----
+
