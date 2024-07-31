@@ -149,7 +149,7 @@ https://www.netapp.com/company/legal/privacy-policy/["개인 정보 보호 정�
 * 지정되지 않은 경우 Astra Trident는 지난 24시간 동안 로그를 가져옵니다.
 * 을 사용하여 로그 보존 기간을 지정할 수 있습니다 `--since` 깃발. 예를 들면 다음과 같습니다. `tridentctl send autosupport --since=1h`. 이 정보는 를 통해 수집 및 전송됩니다 `trident-autosupport` 컨테이너
 Astra Trident와 함께 설치됩니다. 에서 컨테이너 이미지를 얻을 수 있습니다 https://hub.docker.com/r/netapp/trident-autosupport["Trident AutoSupport를 누릅니다"^].
-* Trident AutoSupport는 개인 식별 정보(PII) 또는 개인 정보를 수집하거나 전송하지 않습니다. 이 제품은 와 함께 제공됩니다 https://www.netapp.com/us/media/enduser-license-agreement-worldwide.pdf["EULA"^] Trident 컨테이너 이미지 자체에는 적용되지 않습니다. 데이터 보안 및 신뢰에 대한 NetApp의 노력에 대해 자세히 알아볼 수 있습니다 https://www.netapp.com/us/company/trust-center/index.aspx["여기"^].
+* Trident AutoSupport는 개인 식별 정보(PII) 또는 개인 정보를 수집하거나 전송하지 않습니다. 에는 Trident 컨테이너 이미지 자체에 적용할 수 없는 가 https://www.netapp.com/us/media/enduser-license-agreement-worldwide.pdf["EULA"^] 포함되어 있습니다. 데이터 보안 및 신뢰에 대한 NetApp의 노력에 대해 더 자세히 알아볼 수 https://www.netapp.com/pdf.html?item=/media/14114-enduserlicenseagreementworldwidepdf.pdf["여기"^]있습니다.
 
 
 Astra Trident에서 보낸 페이로드의 예는 다음과 같습니다.
