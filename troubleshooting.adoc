@@ -232,3 +232,12 @@ Pod에 Astra Trident 관리형 네임스페이스(NVMe 영구 볼륨)가 연결�
  If you remove the `hostNQN` of the worker node from the corresponding subsystem, the unstaging process gets stuck when you attempt to delete the pod. In this scenario, you cannot run any NVMe CLI commands on the Kubernetes node.
 .해결 방법
 를 추가합니다 `hostNQN` 하위 시스템으로 돌아갑니다.
+
+
+
+=== 네임스페이스 매핑을 삭제했습니다
+
+노드 이름이 긴 k8s 환경에서 NVMe/TCP를 사용할 경우 Pod를 스토리지에 연결할 수 없습니다.
+
+.해결 방법
+하위 시스템 이름이 64자 미만으로 되도록 노드 이름을 줄입니다.

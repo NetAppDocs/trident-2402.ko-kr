@@ -4510,4 +4510,6 @@ Trident의 인스턴스가 하나만 있으면 지정된 모든 인스턴스에�
   <block id="e932e8b67111a2dc118d7599f04cdc8b" category="paragraph">Astra Control Provisioner는 스냅샷에서 데이터를 복원합니다. 스냅샷 복구 상태를 확인할 수 있습니다.</block>
   <block id="454c5148c2a664f37fc49833dc491272" category="list-text">대부분의 경우 Astra Control Provisioner는 장애 발생 시 작업을 자동으로 재시도하지 않습니다. 작업을 다시 수행해야 합니다.</block>
   <block id="c83b74c2020dd836f5b401ecda0da78c" category="list-text">관리자 권한이 없는 Kubernetes 사용자는 애플리케이션 네임스페이스에서 TASR CR을 생성할 수 있는 관리자의 권한을 받아야 할 수 있습니다.</block>
+  <block id="fd2382cbf04a0cd551917ebb29238078" category="paragraph">노드 이름이 긴 k8s 환경에서 NVMe/TCP를 사용할 경우 Pod를 스토리지에 연결할 수 없습니다.</block>
+  <block id="aa68fd6175a82d0d7c1dda4f60cac719" category="paragraph">하위 시스템 이름이 64자 미만으로 되도록 노드 이름을 줄입니다.</block>
 </blocks>
