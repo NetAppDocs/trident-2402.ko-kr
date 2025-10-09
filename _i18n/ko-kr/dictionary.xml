@@ -1217,9 +1217,6 @@ Astra Trident: 이 상태에서 자동으로 복구를 시도합니다. 이 상�
   <block id="f72ba1a3a498489a96fd8774bfa9ea9d" category="example-title">&lt;/strong&gt;를 처리하는 &lt;strong&gt; 자동 Kubernetes 업그레이드</block>
   <block id="f456a413d0506028374e871768a5f176" category="paragraph">클러스터의 Kubernetes 버전이 지원되는 버전으로 업그레이드되면 운영자는 기존 Astra Trident 설치를 자동으로 업데이트하고 Kubernetes 버전 요구사항을 충족하도록 변경합니다.</block>
   <block id="d1aae6ea63eb5e7fe6a9fcea5f671406" category="admonition">클러스터가 지원되지 않는 버전으로 업그레이드되면 운영자는 Astra Trident를 설치할 수 없습니다. Astra Trident가 운영자와 함께 이미 설치된 경우 Astra Trident가 지원되지 않는 Kubernetes 버전에 설치되었음을 나타내는 경고가 표시됩니다.</block>
-  <block id="c3b2fe84f143129d7a18ad12df229bc6" category="example-title">BlueXP(이전의 Cloud Manager) &lt;/strong&gt;를 사용한 &lt;strong&gt; Kubernetes 클러스터 관리</block>
-  <block id="fd1117c82327fbe8671f26e897ceb8f4" category="inline-link-macro">BlueXP를 사용하는 Astra Trident</block>
-  <block id="a76a1e164520105317267dc41b95e8ce" category="paragraph">와 함께 <block ref="f8c16e8c21124ccc028d2db7fd32a98f" category="inline-link-macro-rx"></block>Astra Trident의 최신 버전으로 업그레이드하고, 스토리지 클래스를 추가 및 관리하고, 작업 환경에 연결한 다음, Cloud Backup Service를 사용하여 영구 볼륨을 백업할 수 있습니다. BlueXP는 Trident 연산자를 사용하여 수동으로 또는 Helm을 사용하여 Astra Trident 구축을 지원합니다.</block>
   <block id="43e6c0a141c1737a96917c56c7e22a73" category="inline-link-macro">&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;를 사용하여 설치</block>
   <block id="1a2de31d648d8c09e5c2a9257a5ad67b" category="paragraph">업그레이드해야 하는 기존 배포가 있거나 배포를 사용자 지정하려는 경우 고려해야 합니다 <block ref="e214bf159dbaf6573cfe15f1373b92db" category="inline-link-macro-rx"></block>. Astra Trident를 구축하는 기존 방법입니다.</block>
   <block id="4c24a3b9facf2ea9fc7ed2ca52dab45d" category="inline-link-macro">&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt; 설치를 사용자 지정합니다</block>
@@ -4512,4 +4509,6 @@ Trident의 인스턴스가 하나만 있으면 지정된 모든 인스턴스에�
   <block id="c83b74c2020dd836f5b401ecda0da78c" category="list-text">관리자 권한이 없는 Kubernetes 사용자는 애플리케이션 네임스페이스에서 TASR CR을 생성할 수 있는 관리자의 권한을 받아야 할 수 있습니다.</block>
   <block id="fd2382cbf04a0cd551917ebb29238078" category="paragraph">노드 이름이 긴 k8s 환경에서 NVMe/TCP를 사용할 경우 Pod를 스토리지에 연결할 수 없습니다.</block>
   <block id="aa68fd6175a82d0d7c1dda4f60cac719" category="paragraph">하위 시스템 이름이 64자 미만으로 되도록 노드 이름을 줄입니다.</block>
+  <block id="15eaa3bd461b989a50d54376e8b82942" category="example-title">&lt;strong&gt; NetApp Console 사용한 Kubernetes 클러스터 관리&lt;/strong&gt;</block>
+  <block id="28cfb8f261719a05032a41acccc32995" category="paragraph">NetApp Console 사용하여 Astra Trident 사용하면 최신 버전의 Astra Trident 로 업그레이드하고, 스토리지 클래스를 추가 및 관리하고 작업 환경에 연결하고, Cloud Backup Service 사용하여 영구 볼륨을 백업할 수 있습니다.  콘솔은 Helm을 사용하거나 수동으로 Trident 운영자를 사용하여 Astra Trident 배포할 수 있도록 지원합니다.</block>
 </blocks>
