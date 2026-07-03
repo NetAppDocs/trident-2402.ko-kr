@@ -176,10 +176,7 @@
   <block id="1a3a2b5e6c52142797bb5c00594e2a3c" category="inline-link-macro">23.04</block>
   <block id="4f00a05b361ef580687832a6a48984db" category="paragraph"><block ref="4f00a05b361ef580687832a6a48984db" category="inline-link-macro-rx"></block></block>
   <block id="fc7d05f9009e90b92a15aad926bca249" category="cell">2026년 4월</block>
-  <block id="8dfda84fc7f59655e20a770603bf9231" category="inline-link-macro">23.01</block>
-  <block id="e0ed61e44672f0b6193055dd0719d240" category="paragraph"><block ref="e0ed61e44672f0b6193055dd0719d240" category="inline-link-macro-rx"></block></block>
   <block id="cfab1ba8c67c7c838db98d666f02a132" category="cell">--</block>
-  <block id="7022ed6df71cc12fbd0576cef4df23fd" category="cell">2026년 1월</block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">NetApp Knowledgebase(로그인 필요)</block>
   <block id="02156e884c41dcd300cb53b1bedf09d8" category="paragraph">전체 문제 해결 문서 목록은 을 참조하십시오<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>. Astra와 관련된 문제 해결에 대한 정보도 찾을 수 있습니다<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>.</block>
   <block id="1cf7168782187634fbc408c66b895dbc" category="section-title">커뮤니티 지원</block>
@@ -516,7 +513,6 @@ ONTAP의 작동 방식 및 방법 때문입니다<block ref="8321592ce24c8a122ec
   <block id="20a385c1dc7ef65425669840055b5330" category="list-text">최소 권장 FlexGroup 구성원/볼륨 크기는 100GiB입니다.</block>
   <block id="db78b2a7acf43fa03cd95fb3a77c82f9" category="list-text">FlexGroup 볼륨에 대해서는 클론 생성이 지원되지 않습니다.</block>
   <block id="f5ac1e3c252855373c7f660dbd89699d" category="inline-link">NetApp FlexGroup 볼륨 모범 사례 및 구현 가이드 를 참조하십시오</block>
-  <block id="df1a7e79743809601db1d20d6a33ae52" category="paragraph">FlexGroups에 적합한 FlexGroups 및 워크로드에 대한 자세한 내용은 를 참조하십시오<block ref="b8a99695d7979127a1cab07b42e22743" category="inline-link-rx"></block>.</block>
   <block id="b30b6b60171d85877ea91897bdd6faed" category="paragraph">같은 환경에서 고급 기능과 대규모 확장을 위해 Docker Volume Plugin의 여러 인스턴스를 를 사용하여 실행할 수 있습니다<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 또 다른 방법은 을 사용하는 것입니다<block ref="caafdf62a2c609bfa5316118231a1007" prefix=" " category="inline-code"></block>.</block>
   <block id="0c0f6724044ed44fb85d2ce3193cb7c3" category="section-title">ONTAP 구성 파일의 예</block>
   <block id="9dbc2be9eae595ee555b36e2d5464473" category="example-title">드라이버에 대한 NFS 예 &lt;code&gt;ontap-nas&lt;/code&gt;</block>
@@ -724,7 +720,6 @@ ONTAP의 작동 방식 및 방법 때문입니다<block ref="8321592ce24c8a122ec
   <block id="1fdf61a8f946268990d8e15dd9069a6d" category="paragraph"><block ref="eca39b018af81e7b5c8e71b5b4aa3790" category="inline-link-rx"></block> 스토리지 관리자가 성능을 보장하고 단순화된 스토리지 설치 공간을 활용하여 워크로드를 통합할 수 있도록 지원합니다. Element는 스토리지 관리의 모든 측면을 자동화하는 API와 결합되어 스토리지 관리자가 더 적은 노력으로 더 많은 작업을 수행할 수 있게 합니다.</block>
   <block id="25f221cc63a7e1fa55b05c29420a72a2" category="paragraph"><block ref="2841e7defe3939e68d83d007d1ad666b" category="inline-link-rx"></block> 일상적인 작업을 자동화하고 인프라 관리자가 보다 중요한 기능에 집중할 수 있도록 하여 데이터 센터의 관리 및 확장을 단순화합니다.</block>
   <block id="be17f8b9c728a6cb61cad5a2609b3888" category="paragraph">NetApp HCI는 Trident에서 완전히 지원합니다. Trident는 컨테이너화된 애플리케이션에 대한 스토리지 장치를 기본 NetApp HCI 스토리지 플랫폼에 직접 프로비저닝 및 관리할 수 있습니다.</block>
-  <block id="29e7ab00082418141d470583a19c28d3" category="paragraph"><block ref="2384314bcd106c8062815b2ed789c4ad" category="inline-link-rx"></block> NetApp에서 제공하는 엔터프라이즈급 Azure 파일 공유 서비스입니다. Azure에서 기본적으로 가장 까다로운 파일 기반 워크로드를 실행하고 NetApp에서 기대하는 성능 및 강력한 데이터 관리를 제공할 수 있습니다.</block>
   <block id="a1515efe69d0ac9d979af2bdfc068934" category="paragraph"><block ref="68704f3321dd8ca7029c03c29da7736a" category="inline-link-rx"></block> 는 NFS 및 SMB를 통해 NAS 볼륨을 All-Flash 성능으로 제공하는 클라우드 네이티브 파일 서비스입니다. 이 서비스를 사용하면 기존 애플리케이션을 포함한 모든 워크로드를 GCP 클라우드에서 실행할 수 있습니다. GCE(Google Compute Engine) 인스턴스에 대한 일관된 고성능, 즉각적인 복제, 데이터 보호 및 보안 액세스를 제공하는 완전 관리형 서비스를 제공합니다.</block>
   <block id="a60c2f57df655a9ac5fcaa0750886195" category="summary">Kubernetes를 시작하는 경우 지침에 따라 Kubernetes를 설치하여 사용해 보십시오. 다음 지침은 Trident에서 시연을 위해 통합할 수 있는 베어본 단일 노드 클러스터를 제공합니다.</block>
   <block id="fac0082fb8411565f3d5cb3788a17b17" category="doc">Astra Trident를 위한 빠른 시작</block>
@@ -1594,7 +1589,6 @@ Yesfootnote:4[]: 원시 블록 볼륨에서 지원됩니다
 Yesfootnote: 1[]: Astra Trident에서 관리하지 않음
 Yesfootnote:2[]: 원시 블록 볼륨에서 지원됩니다</block>
   <block id="64648abd6d020446c9c8d556a1584d71" category="section-title">Azure NetApp Files 백엔드 드라이버</block>
-  <block id="657e0fa57d574227dd7520919f55ff92" category="paragraph">Astra Trident가 을 사용합니다<block ref="bc5779a2d33eeb1304bae57f15920cfc" prefix=" " category="inline-code"></block> 를 관리할 드라이버 <block ref="d617d79fbb5ee3bc8bd280353eeb1349" category="inline-link-macro-rx"></block> 서비스.</block>
   <block id="1f65578a7accdff5ca6ff9f8dc42d9c6" category="inline-link-macro">Azure NetApp Files를 위한 Astra Trident 백엔드 구성입니다</block>
   <block id="488e366967d09f9808e7b3de7df261ac" category="paragraph">이 드라이버 및 구성 방법에 대한 자세한 내용은 에서 찾을 수 있습니다 <block ref="7f5bc9035106c3c834aeb8867a5fce2c" category="inline-link-macro-rx"></block>.</block>
   <block id="4da613089cbda3d7c19cb4b3f67c1f5d" category="cell">Azure NetApp Files 드라이버</block>
@@ -1906,7 +1900,6 @@ Yesfootnote: 1[]: Astra Trident에서 관리하지 않음</block>
   <block id="2734923c054f38d8ca66133414af4469" category="paragraph">짧은 버스트 시나리오에서 허용되는 최대 IOPS입니다.</block>
   <block id="e2eb05f1ef7720127ac371ceddc6f433" category="admonition">최대 IOPS와 버스트 IOPS는 최대 200,000으로 설정할 수 있지만, 실제 볼륨의 최대 성능은 클러스터 사용량 및 노드당 성능에 의해 제한됩니다.</block>
   <block id="fa9b1a3006e0ba9ad904c059c0b9add6" category="inline-link">SolidFire 서비스 품질</block>
-  <block id="acd73d692aa90cacfe480ba8ba39cd5d" category="paragraph">블록 크기와 대역폭은 IOPS 수에 직접적인 영향을 미칩니다. 블록 크기가 증가함에 따라 시스템에서 더 큰 블록 크기를 처리하는 데 필요한 수준까지 대역폭을 높일 수 있습니다. 대역폭이 증가할수록 시스템에서 달성할 수 있는 IOPS의 수가 감소합니다. 을 참조하십시오<block ref="c8976c50ed9f016849fdce232777cd31" category="inline-link-rx"></block> QoS 및 성능에 대한 자세한 내용은 를 참조하십시오.</block>
   <block id="b4657825f74ed622384dddf3a1d7d3b7" category="section-title">SolidFire 인증</block>
   <block id="9d3b5ff1cde828a63203f0465a34a967" category="paragraph">요소는 CHAP 및 vag(볼륨 액세스 그룹)의 두 가지 인증 방법을 지원합니다. CHAP는 CHAP 프로토콜을 사용하여 호스트를 백엔드에 인증합니다. 볼륨 액세스 그룹은 프로비전되는 볼륨에 대한 액세스를 제어합니다. NetApp은 CHAP를 사용하여 인증을 수행하는 것이 더 간단하고 확장 제한이 없기 때문에 CHAP를 사용하는 것이 좋습니다.</block>
   <block id="fc9e812321a3f9b0eab1b702a08bab4e" category="admonition">CSI 프로비저닝이 강화된 Trident는 CHAP 인증 사용을 지원합니다. VAG는 일반적인 비 CSI 작동 모드에서만 사용해야 합니다.</block>
@@ -1923,7 +1916,6 @@ Yesfootnote: 1[]: Astra Trident에서 관리하지 않음</block>
   <block id="36588ac65dcdb9b93916fb0ab708edb3" category="list-text"><block ref="36588ac65dcdb9b93916fb0ab708edb3" category="inline-link-rx"></block></block>
   <block id="ca7ab5ec4cba84fbef55956bb38759ce" category="paragraph">Element 소프트웨어 *</block>
   <block id="e809d9f88c2933195c4d2ab379c1b5dc" category="inline-link">Linux용 SolidFire 구성</block>
-  <block id="ce0470e08aa854a8f93fa119434e8422" category="list-text"><block ref="ce0470e08aa854a8f93fa119434e8422" category="inline-link-rx"></block></block>
   <block id="d64280eb12d42bb67976ffba6d268e7b" category="paragraph">* NetApp HCI *</block>
   <block id="3bc72bedcc42d144356d4f933c48485d" category="inline-link">NetApp HCI 구축 사전 요구 사항</block>
   <block id="85bfffc1a1f7aaabd6cf58841640c308" category="list-text"><block ref="85bfffc1a1f7aaabd6cf58841640c308" category="inline-link-rx"></block></block>
@@ -2770,7 +2762,6 @@ SMB 볼륨에 대해 무시됩니다.</block>
   <block id="84444089b52eed627a838de74ae8d652" category="section-title">NFS 및 SMB 볼륨의 사전 요구 사항</block>
   <block id="97d64245613ba751b698ce77fd51779a" category="inline-link">Azure: Azure NetApp Files를 설정하고 NFS 볼륨을 생성합니다</block>
   <block id="d90582d42d65d5af05c3d40ad0eb4987" category="paragraph">Azure NetApp Files를 처음 사용하거나 새 위치에서 사용하는 경우 Azure NetApp Files를 설정하고 NFS 볼륨을 생성하려면 몇 가지 초기 구성이 필요합니다. 을 참조하십시오<block ref="b6e93c3bfc36cf835c63e42e55586d97" category="inline-link-rx"></block>.</block>
-  <block id="07e7004c50a67a3e4e366b4ca1c28e3d" category="paragraph">를 구성하고 사용합니다<block ref="24a785881ff1cdf191a2239811dc9597" category="inline-link-rx"></block> 백엔드, 다음이 필요합니다.</block>
   <block id="4e92a2addd95bd2076226bce70449f6d" category="list-text"><block ref="8c443e170595ba0feac007ffb92cb49a" prefix="" category="inline-code"></block>,<block ref="bc54592d6183695b841c6d1880ec0bf8" prefix=" " category="inline-code"></block>,<block ref="93c5bebdea9c94a0740fe6fd9bb250f0" prefix=" " category="inline-code"></block>,<block ref="d5189de027922f81005951e6efe0efd5" prefix=" " category="inline-code"></block>, 및<block ref="2b53761249254ce6b502f521e5cc0683" prefix=" " category="inline-code"></block> AKS 클러스터에서 관리되는 ID를 사용하는 경우 선택 사항입니다.</block>
   <block id="5c0a5e9c97099065874a650cf8c67a66" category="list-text"><block ref="bc54592d6183695b841c6d1880ec0bf8" prefix="" category="inline-code"></block>,<block ref="93c5bebdea9c94a0740fe6fd9bb250f0" prefix=" " category="inline-code"></block>, 및<block ref="2b53761249254ce6b502f521e5cc0683" prefix=" " category="inline-code"></block> AKS 클러스터에서 클라우드 ID를 사용할 때는 선택 사항입니다.</block>
   <block id="99c7065ab76131a7b7763287bb5b6735" category="inline-link-macro">Microsoft: Azure NetApp Files에 대한 용량 풀을 생성합니다</block>
@@ -4117,7 +4108,6 @@ SAN만 해당.</block>
   <block id="d356d628089d439d75e3f85564372658" category="list-text">tridentctl과 함께 설치됩니다</block>
   <block id="87248f7afe198418bdbedd919695631e" category="list-text">을 포함하여 각 백엔드에 대한 디버그 로그를 얻을 수도 있습니다<block ref="effa2d809c72dcb6cce15a1e0b040e63" prefix=" " category="inline-code"></block> 백엔드 정의에서 예를 들어, 을 포함합니다<block ref="4974488c28ddbbc84e45d213810267be" prefix=" " category="inline-code"></block> Trident 로그에서 API 호출 및 메서드 트래버스된 정보를 얻습니다. 기존 백엔드에 가 있을 수 있습니다<block ref="effa2d809c72dcb6cce15a1e0b040e63" prefix=" " category="inline-code"></block> 로 구성됩니다<block ref="ad782b779edfd8199198bed41b3e3b6b" prefix=" " category="inline-code"></block>.</block>
   <block id="6cc37a0664d7f97f87d34eadef23dbad" category="list-text">RedHat CoreOS를 사용할 때는 다음을 확인하십시오<block ref="3fe4dc8de876aca2c78fa0cd9c6d0b65" prefix=" " category="inline-code"></block> 는 작업자 노드에서 활성화되고 기본적으로 시작됩니다. 이 작업은 OpenShift MachineConfigs를 사용하거나 점화 템플릿을 수정하여 수행할 수 있습니다.</block>
-  <block id="154244be43a4ba50080a256f5657b29a" category="list-text">에서 Trident를 사용할 때 일반적으로 발생할 수 있는 문제입니다<block ref="4568986ef6397d7c901269fc0e190ede" category="inline-link-rx"></block> 테넌트 및 클라이언트 암호가 권한이 부족한 앱 등록에서 나오는 경우 입니다. Trident 요구사항의 전체 목록은 을 참조하십시오 <block ref="afedf4ee56554ea6e6b54e6aa206680c" category="inline-link-macro-rx"></block> 구성.</block>
   <block id="7f0ecdfa510b31b01d331c2760643b83" category="list-text">컨테이너에 PV를 장착하는 데 문제가 있는 경우, 반드시 확인하십시오<block ref="7a31649dd02ecf0349542b72f9d5ef54" prefix=" " category="inline-code"></block> 가 설치되어 실행 중입니다. 호스트 OS에 필요한 패키지 관리자를 사용하여 확인합니다<block ref="7a31649dd02ecf0349542b72f9d5ef54" prefix=" " category="inline-code"></block> 가 실행 중입니다. 의 상태를 확인할 수 있습니다<block ref="7a31649dd02ecf0349542b72f9d5ef54" prefix=" " category="inline-code"></block> 를 실행하여 서비스를 제공합니다<block ref="461bc51ac38341d1d2fdae2e84bc6e47" prefix=" " category="inline-code"></block> 또는 그와 동등한 제품이라는 것입니다.</block>
   <block id="78aeadc89feb4cf244398a7d35a0d656" category="list-text">Trident 백엔드가 에 포함되어 있다고 보고하는 경우<block ref="26934eb377001f66e37289a5c93fe284" prefix=" " category="inline-code"></block> State: 이전에 작업을 수행했지만 백엔드와 연결된 SVM/관리 자격 증명을 변경했기 때문일 수 있습니다. 을 사용하여 백엔드 정보를 업데이트합니다<block ref="defd1e55f93269ac9278afc086951ba8" prefix=" " category="inline-code"></block> 또는 Trident Pod를 바운드하면 이 문제가 해결됩니다.</block>
   <block id="b851cfc28cd6e5cb9aaf87bdb59a68aa" category="list-text">Docker를 컨테이너 런타임으로 사용하여 Trident를 설치할 때 권한 문제가 발생하면 를 사용하여 Trident 설치를 시도하십시오<block ref="acbc9344b624715d4749280f7e4a5b49" prefix=" " category="inline-code"></block> 깃발. 이렇게 하면 설치 프로그램 포드가 사용되지 않으며 로 인해 발생하는 권한 문제가 발생하지 않습니다<block ref="c84ef67352bb6783ff2881f9f2821c2a" prefix=" " category="inline-code"></block> 사용자.</block>
@@ -4205,10 +4195,6 @@ Trident의 인스턴스가 하나만 있으면 지정된 모든 인스턴스에�
   <block id="62486fa65fc31c383ace8989549632ad" category="sidebar">스냅샷을 사용합니다</block>
   <block id="190dbae19c88b1e68bf03f7783c5d5d1" category="list-text"><block ref="190dbae19c88b1e68bf03f7783c5d5d1" category="inline-link-rx"></block></block>
   <block id="430c6bcb8516befc45fb8173b0ca4e1f" category="list-text"><block ref="430c6bcb8516befc45fb8173b0ca4e1f" category="inline-link-rx"></block></block>
-  <block id="d7d36869f2f4aa1eb99a10008e153f20" category="list-text"><block ref="d7d36869f2f4aa1eb99a10008e153f20" category="inline-link-rx"></block></block>
-  <block id="f8b52d963f246a75dc6c8b78c954a4fd" category="list-text"><block ref="f8b52d963f246a75dc6c8b78c954a4fd" category="inline-link-rx"></block></block>
-  <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
-  <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport는 개인 식별 정보(PII) 또는 개인 정보를 수집하거나 전송하지 않습니다. 에는 Trident 컨테이너 이미지 자체에 적용할 수 없는 가<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 포함되어 있습니다. 데이터 보안 및 신뢰에 대한 NetApp의 노력에 대해 더 자세히 알아볼 수<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>있습니다.</block>
   <block id="67fc69d0bf35fe0124a1937122bf3aec" category="summary">Astra Control과 스토리지 백엔드 간의 트래픽을 보호하도록 암호화를 구성할 수 있습니다.</block>
   <block id="4d7f45f93965eed03fcd71fbeed6d2a8" category="doc">전송 중인 Kerberos 암호화를 구성합니다</block>
   <block id="876580b79932af82226561f24b11688f" category="paragraph">Astra Control Provisioner를 사용하면 관리형 클러스터와 스토리지 백엔드 간의 트래픽 암호화를 활성화하여 데이터 액세스 보안을 개선할 수 있습니다.</block>
@@ -4502,4 +4488,15 @@ Trident의 인스턴스가 하나만 있으면 지정된 모든 인스턴스에�
   <block id="e1d2b7ec66528e55a29a88734b7dd47e" category="paragraph">NetApp은 제품과 서비스를 지속적으로 개선하고 향상시키고 있습니다. 다음은 Astra Trident의 최신 기능 중 일부입니다. 이전 릴리스에 대한 내용은 이전 버전의 설명서를 참조하십시오.</block>
   <block id="23dc68eb3282da7f8baebc1f7c84fff9" category="inline-link">지원 수명 주기 페이지</block>
   <block id="df26dce8cff00211af89034cce0d1904" category="admonition">최신 Trident 버전 지원 일정은<block ref="605c91b6d04b068d1f5e6199e80f3518" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="1ffa064afd34a4aa3d603a312576309c" category="paragraph">FlexGroups 및 FlexGroups에 적합한 워크로드에 대한 자세한 내용은 <block ref="5eedbc04c087d39db0ca9a8cd8471015" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="5090b1528d6e6561587ada33bf0caab6" category="paragraph"><block ref="67ffc9d81af4d4784973c007c719056a" category="inline-link-rx"></block>는 NetApp이 제공하는 엔터프라이즈급 Azure 파일 공유 서비스입니다. Azure에서 기본적으로 가장 까다로운 파일 기반 워크로드를 실행할 수 있으며, NetApp에서 기대하는 성능과 풍부한 데이터 관리 기능을 제공합니다.</block>
+  <block id="ff1dca2401508e9666b192612c8dc93d" category="paragraph">Astra Trident는 <block ref="bc5779a2d33eeb1304bae57f15920cfc" prefix=" " category="inline-code"></block> 드라이버를 사용하여 <block ref="72aac22ad2323d491b69751decd3d6b3" category="inline-link-macro-rx"></block> 서비스를 관리합니다.</block>
+  <block id="6a19e2418aa5a7364cafc452caa81d8b" category="paragraph">블록 크기와 대역폭은 IOPS 수에 직접적인 영향을 미칩니다. 블록 크기가 증가함에 따라 시스템은 더 큰 블록 크기를 처리하는 데 필요한 수준까지 대역폭을 증가시킵니다. 대역폭이 증가하면 시스템이 달성할 수 있는 IOPS 수는 감소합니다. QoS 및 성능에 대한 자세한 내용은<block ref="967e30ab6321feb79b1f60d87637a623" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="afd3e82da8a12df46005660c5b0458ab" category="list-text"><block ref="afd3e82da8a12df46005660c5b0458ab" category="inline-link-rx"></block></block>
+  <block id="3659f55627e86bd71f85eb663d155fdb" category="list-text"><block ref="3659f55627e86bd71f85eb663d155fdb" category="inline-link-rx"></block></block>
+  <block id="948ce0d4338b9761e83a5c41c4e05b77" category="list-text"><block ref="948ce0d4338b9761e83a5c41c4e05b77" category="inline-link-rx"></block></block>
+  <block id="2f40f77c3e54025e1174369f0cadf798" category="list-text"><block ref="2f40f77c3e54025e1174369f0cadf798" category="inline-link-rx"></block></block>
+  <block id="4d7f894e8ec350a861c28ea984648f59" category="paragraph"><block ref="22ab900b028c044945b4dba56093fe8f" category="inline-link-rx"></block> 백엔드를 구성하고 사용하려면 다음이 필요합니다.</block>
+  <block id="9ea1dc44c501f59786a0dd2c5ebc2d21" category="list-text">Trident AutoSupport는 개인 식별 정보(PII) 또는 개인 정보를 수집하거나 전송하지 않습니다. Trident 컨테이너 이미지 자체에는 적용되지 않는<block ref="ea14b34590cee15ec565ad8fd8feca2e" category="inline-link-rx"></block>와 함께 제공됩니다. NetApp의 데이터 보안 및 신뢰에 대한 노력에 대해 자세히 알아볼 수 있습니다<block ref="ea3b01bc03342a227ac7c6848f1e44fa" category="inline-link-rx"></block>.</block>
+  <block id="0aed33e870a02a203987e1f6cbeb75d8" category="list-text">Trident를<block ref="5990d744db8a85d254742635736f0912" category="inline-link-rx"></block> 사용할 때 발생할 수 있는 일반적인 문제는 테넌트 및 클라이언트 암호가 권한이 부족한 앱 등록에서 제공되는 경우입니다. Trident 요구 사항의 전체 목록은 <block ref="afedf4ee56554ea6e6b54e6aa206680c" category="inline-link-macro-rx"></block> 구성을 참조하십시오.</block>
 </blocks>

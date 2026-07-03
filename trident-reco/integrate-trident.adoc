@@ -115,7 +115,7 @@ Yesfootnote:2[]: 원시 블록 볼륨에서 지원됩니다
 
 === Azure NetApp Files 백엔드 드라이버
 
-Astra Trident가 을 사용합니다 `azure-netapp-files` 를 관리할 드라이버 link:https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp Files"^] 서비스.
+Astra Trident는  `azure-netapp-files` 드라이버를 사용하여 link:https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"^] 서비스를 관리합니다.
 
 이 드라이버 및 구성 방법에 대한 자세한 내용은 에서 찾을 수 있습니다 link:https://docs.netapp.com/us-en/trident/trident-use/anf.html["Azure NetApp Files를 위한 Astra Trident 백엔드 구성입니다"^].
 
