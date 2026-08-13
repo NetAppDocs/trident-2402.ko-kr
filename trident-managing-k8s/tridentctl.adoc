@@ -16,6 +16,7 @@ summary: Trident에 대한 간단한 액세스를 제공하는 명령줄 유틸�
 
 
 
+[[commands-and-global-flags]]
 == 명령 및 글로벌 플래그
 
 실행할 수 있습니다 `tridentctl help` 에 사용할 수 있는 명령 목록을 가져옵니다 `tridentctl` 또는 를 추가합니다 `--help` 특정 명령에 대한 옵션 및 플래그 목록을 가져오려면 임의의 명령에 플래그를 지정합니다.
@@ -70,10 +71,12 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 ====
 
 
+[[command-options-and-flags]]
 == 명령 옵션 및 플래그
 
 
 
+[[create]]
 === 생성
 
 를 사용합니다 `create` Astra Trident에 리소스를 추가하는 명령입니다.
@@ -85,6 +88,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[delete]]
 === 삭제
 
 를 사용합니다 `delete` Astra Trident에서 하나 이상의 리소스를 제거하는 명령입니다.
@@ -99,6 +103,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[get]]
 === 가져오기
 
 를 사용합니다 `get` Astra Trident에서 하나 이상의 리소스를 제공하는 명령입니다.
@@ -116,6 +121,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[images]]
 === 이미지
 
 사용 `images` Astra Trident에 필요한 컨테이너 이미지 표를 인쇄하기 위한 플래그
@@ -128,6 +134,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[import-volume]]
 === 볼륨 가져오기
 
 를 사용합니다 `import volume` 기존 볼륨을 Astra Trident로 가져오는 명령입니다.
@@ -142,6 +149,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[install]]
 === 설치합니다
 
 를 사용합니다 `install` Astra Trident를 설치하는 플래그입니다.
@@ -169,6 +177,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[logs]]
 === 로그
 
 사용 `logs` Astra Trident의 로그를 인쇄할 플래그입니다.
@@ -185,6 +194,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[send]]
 === 전송
 
 를 사용합니다 `send` Astra Trident에서 리소스를 보내는 명령입니다.
@@ -196,6 +206,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[uninstall]]
 === 설치 제거
 
 사용 `uninstall` Astra Trident를 제거하는 플래그입니다.
@@ -208,6 +219,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[update]]
 === 업데이트
 
 를 사용합니다 `update` Astra Trident에서 리소스를 수정하는 명령
@@ -219,6 +231,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[update-backend-state]]
 === 백엔드 상태를 업데이트합니다
 
 를 사용합니다 `update backend state` 백엔드 작업을 일시 중지하거나 재개하는 명령입니다.
@@ -238,6 +251,7 @@ WARNING: Trident REST 인터페이스는 127.0.0.1(IPv4의 경우) 또는 [::1](
 
 
 
+[[version]]
 === 버전
 
 사용 `version` 플래그를 사용하여 의 버전을 인쇄합니다 `tridentctl` 및 실행 중인 Trident 서비스를 제공합니다.

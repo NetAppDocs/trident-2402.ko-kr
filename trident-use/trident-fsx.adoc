@@ -16,6 +16,7 @@ https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["NetApp
 
 
 
+[[overview]]
 == 개요
 
 파일 시스템은 Amazon FSx의 주요 리소스이며, 이는 사내 ONTAP 클러스터와 유사합니다. 각 SVM 내에서 파일 시스템에 파일과 폴더를 저장하는 데이터 컨테이너인 하나 이상의 볼륨을 생성할 수 있습니다. NetApp ONTAP용 Amazon FSx를 사용하면 클라우드에서 Data ONTAP가 관리형 파일 시스템으로 제공됩니다. 새로운 파일 시스템 유형을 * NetApp ONTAP * 라고 합니다.
@@ -24,6 +25,7 @@ NetApp ONTAP용 Amazon FSx와 Astra Trident를 사용하면 Amazon EKS(Elastic K
 
 
 
+[[considerations]]
 == 고려 사항
 
 * SMB 볼륨:
@@ -42,6 +44,7 @@ NOTE: Astra Trident에 IAM 역할을 지정하는 경우 를 지정하는 것을
 
 
 
+[[fsx-for-ontap-driver-details]]
 == FSx for ONTAP 드라이버 세부 정보
 
 다음 드라이버를 사용하여 Astra Trident를 NetApp ONTAP용 Amazon FSx와 통합할 수 있습니다.
@@ -57,6 +60,7 @@ NOTE: Astra Trident에 IAM 역할을 지정하는 경우 를 지정하는 것을
 
 
 
+[[authentication]]
 == 인증
 
 Astra Trident는 두 가지 인증 모드를 제공합니다.
@@ -79,6 +83,7 @@ WARNING: Astra Trident는 한 대로 실행될 것으로 예상합니다 `vsadmi
 
 
 
+[[cloud-identity-for-eks]]
 == EKS용 클라우드 ID
 
 클라우드 ID를 사용하면 Kubernetes Pod에서 명시적 AWS 자격 증명을 제공하지 않고 AWS IAM 역할로 인증하여 AWS 리소스에 액세스할 수 있습니다.
@@ -143,6 +148,7 @@ tridentctl install --cloud-provider=$CP --cloud-identity="$CI" -n trident
 
 
 
+[[find-more-information]]
 == 자세한 내용을 확인하십시오
 
 * https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["NetApp ONTAP용 Amazon FSx 문서"^]

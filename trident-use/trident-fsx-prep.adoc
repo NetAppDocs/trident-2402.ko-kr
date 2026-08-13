@@ -16,6 +16,7 @@ Amazon Elastic Kubernetes Service(EKS)에서 실행되는 Kubernetes 클러스�
 
 
 
+[[requirements]]
 == 요구 사항
 
 또한 link:../trident-get-started/requirements.html["Astra Trident 요구사항"], ONTAP용 FSx와 Astra Trident를 통합하려면 다음이 필요합니다.
@@ -32,13 +33,14 @@ NOTE: Amazon Linux 및 Ubuntu에 필요한 노드 준비 단계를 따라야 합
 
 
 
+[[ontap-san-and-nas-driver-integration]]
 == ONTAP SAN 및 NAS 드라이버 통합
 
 
 WARNING: SMB 볼륨에 대해 를 구성하는 경우 을 읽어야 합니다 <<SMB 볼륨 프로비저닝을 위한 준비>> 백엔드를 생성하기 전에
 
 .단계
-. 중 하나를 사용하여 Astra Trident를 배포합니다 link:../trident-get-started/kubernetes-deploy.html["배포 방법"].
+. 다음 방법 중 하나를 사용하여 Astra Trident를 배포하십시오link:../trident-install/kubernetes-deploy.html["배포 방법"].
 . SVM 관리 LIF DNS 이름을 수집합니다. 예를 들어, AWS CLI를 사용하여 를 찾습니다 `DNSName` 에 입력 `Endpoints` -> `Management` 다음 명령을 실행한 후:
 +
 [listing]
@@ -154,6 +156,7 @@ spec:
 
 
 
+[[prepare-to-provision-smb-volumes]]
 == SMB 볼륨 프로비저닝을 위한 준비
 
 를 사용하여 SMB 볼륨을 프로비저닝할 수 있습니다 `ontap-nas` 드라이버. 를 누릅니다 <<ONTAP SAN 및 NAS 드라이버 통합>> 다음 단계를 완료합니다.

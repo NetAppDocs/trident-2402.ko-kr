@@ -16,6 +16,7 @@ Astra Trident 설치에서 ONTAP SAN 드라이버를 생성하고 사용하는 �
 
 
 
+[[backend-configuration-options]]
 == 백엔드 구성 옵션
 
 백엔드 구성 옵션은 다음 표를 참조하십시오.
@@ -129,6 +130,7 @@ NetApp ONTAP 백엔드에 Amazon FSx를 사용하는 경우 를 지정하지 마
 |===
 
 
+[[backend-configuration-options-for-provisioning-volumes]]
 == 볼륨 프로비저닝을 위한 백엔드 구성 옵션
 
 에서 이러한 옵션을 사용하여 기본 프로비저닝을 제어할 수 있습니다 `defaults` 섹션을 참조하십시오. 예를 들어, 아래 구성 예제를 참조하십시오.
@@ -180,6 +182,7 @@ NVMe/TCP에 대해서는 LUKS 암호화가 지원되지 않습니다. | ""
 |===
 
 
+[[volume-provisioning-examples]]
 === 볼륨 프로비저닝의 예
 
 다음은 기본값이 정의된 예입니다.
@@ -225,6 +228,7 @@ image::../media/vol-show-san.png[에는 volume show 명령의 출력이 나와 �
 
 
 
+[[minimal-configuration-examples]]
 == 최소 구성의 예
 
 다음 예에서는 대부분의 매개 변수를 기본값으로 두는 기본 구성을 보여 줍니다. 이는 백엔드를 정의하는 가장 쉬운 방법입니다.
@@ -367,6 +371,7 @@ useREST: true
 ====
 
 
+[[examples-of-backends-with-virtual-pools]]
 == 가상 풀의 백엔드 예
 
 이러한 백엔드 정의 파일 샘플에서는 와 같은 모든 스토리지 풀에 대해 특정 기본값이 설정됩니다 `spaceReserve` 없음, `spaceAllocation` 거짓일 경우, 및 `encryption` 거짓일 때. 가상 풀은 스토리지 섹션에 정의됩니다.
@@ -508,6 +513,7 @@ storage:
 ====
 
 
+[[map-backends-to-storageclasses]]
 == 백엔드를 StorageClasses에 매핑합니다
 
 다음 StorageClass 정의는 을 참조하십시오 <<가상 풀의 백엔드 예>>. 를 사용합니다 `parameters.selector` 필드에서 각 StorageClass는 볼륨을 호스팅하는 데 사용할 수 있는 가상 풀을 호출합니다. 선택한 가상 풀에 볼륨이 정의되어 있습니다.

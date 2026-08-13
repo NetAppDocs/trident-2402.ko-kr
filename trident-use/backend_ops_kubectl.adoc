@@ -16,6 +16,7 @@ summary: '을 사용하여 백엔드 관리 작업을 수행하는 방법에 대
 
 
 
+[[delete-a-backend]]
 == 백엔드를 삭제합니다
 
 를 삭제합니다 `TridentBackendConfig`, Astra Trident가 백엔드 삭제/보존(을 기반으로 함)을 수행하도록 지시합니다 `deletionPolicy`)를 클릭합니다. 백엔드를 삭제하려면 을 확인하십시오 `deletionPolicy` 가 삭제되도록 설정되어 있습니다. 을 눌러 만 삭제합니다 `TridentBackendConfig`을 참조하십시오 `deletionPolicy` 유지로 설정되어 있습니다. 이렇게 하면 백엔드가 계속 존재하고 를 사용하여 관리할 수 있습니다 `tridentctl`.
@@ -30,6 +31,7 @@ Astra Trident는 에서 사용 중인 Kubernetes Secrets를 삭제하지 않습�
 
 
 
+[[view-the-existing-backends]]
 == 기존 백엔드를 봅니다
 
 다음 명령을 실행합니다.
@@ -42,6 +44,7 @@ kubectl get tbc -n trident
 
 
 
+[[update-a-backend]]
 == 백엔드를 업데이트합니다
 
 백엔드를 업데이트해야 하는 이유는 여러 가지가 있을 수 있습니다.

@@ -16,6 +16,7 @@ Amazon FSx for ONTAP의 백엔드 구성 옵션에 대해 알아보십시오. �
 
 
 
+[[backend-configuration-options]]
 == 백엔드 구성 옵션
 
 백엔드 구성 옵션은 다음 표를 참조하십시오.
@@ -155,6 +156,7 @@ Kubernetes 영구 볼륨의 마운트 옵션은 일반적으로 스토리지 클
 |===
 
 
+[[update-datalif-after-initial-configuration]]
 === 업데이트 `dataLIF` 초기 구성 후
 
 다음 명령을 실행하여 초기 구성 후에 데이터 LIF를 변경할 수 있으며, 업데이트된 데이터 LIF가 포함된 새 백엔드 JSON 파일을 제공할 수 있습니다.
@@ -168,6 +170,7 @@ NOTE: PVC가 하나 이상의 포드에 연결된 경우 해당 포드를 모두
 
 
 
+[[backend-configuration-options-for-provisioning-volumes]]
 == 볼륨 프로비저닝을 위한 백엔드 구성 옵션
 
 에서 이러한 옵션을 사용하여 기본 프로비저닝을 제어할 수 있습니다 `defaults` 섹션을 참조하십시오. 예를 들어, 아래 구성 예제를 참조하십시오.
@@ -211,9 +214,7 @@ ONTAP에서 지원되지 않음 - NAS - 이코노미 | “”
 자세한 내용은 다음을 참조하십시오. link:../trident-reco/security-reco.html["Astra Trident가 NVE 및 NAE와 연동되는 방식"]. | `false` 
 
 
-| `luksEncryption` | LUKS 암호화를 사용합니다. 을 참조하십시오 link:../trident-reco/security-reco.html#Use-Linux-Unified-Key-Setup-(LUKS)["LUKS(Linux Unified Key Setup) 사용"].
-
-SAN만 해당. | "" 
+| `luksEncryption` | LUKS 암호화를 활성화합니다. link:../trident-reco/security-luks.html["LUKS(Linux Unified Key Setup) 사용"]을 참조하십시오. SAN 전용입니다. | "" 
 
 
 | `tieringPolicy` | 사용할 계층화 정책	`none` | `snapshot-only` ONTAP 9.5 이전 SVM-DR 구성용 
@@ -234,6 +235,7 @@ SMB 기본값은 입니다 `ntfs`.
 |===
 
 
+[[example-configurations]]
 == 예제 설정
 
 .SMB 볼륨에 대한 스토리지 클래스를 구성합니다
